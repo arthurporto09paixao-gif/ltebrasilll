@@ -1,0 +1,22 @@
+Central LTE — Ajuste do cadastro e gestão de entregadores
+
+Alterações entregues:
+- Removido o campo e a exigência de Código da empresa no autocadastro.
+- Cadastro cria usuário Entregador com status pendente e acesso bloqueado.
+- Novo cadastro aparece automaticamente em Entregadores na Central LTE.
+- Operador, Supervisor e Admin podem aprovar o cadastro.
+- Operador, Supervisor e Admin podem recusar com motivo.
+- Operador, Supervisor e Admin podem alterar a senha pelo servidor.
+- Operador, Supervisor e Admin podem remover o entregador e revogar o acesso.
+- Remoção preserva ocorrências, chamados e repasses para auditoria.
+- Notificações e logs de auditoria foram mantidos.
+
+Validação executada:
+- 130 arquivos TypeScript/TSX verificados sintaticamente.
+- Imports locais resolvidos.
+- Migrações SQL verificadas estruturalmente.
+- 30 contratos funcionais e de segurança aprovados.
+
+Observação:
+- Para funcionar em produção, aplique a migração supabase/migrations/20260729170000_entregador_sem_codigo_e_gestao.sql no Supabase.
+- O build completo não foi executado porque o pacote não contém node_modules e as dependências não foram instaladas neste ambiente.
